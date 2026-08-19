@@ -9581,6 +9581,12 @@
             "state": "translated",
             "value": "Open All the Maps"
           }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir todos los mapas"
+          }
         }
       }
     },
