@@ -61,9 +61,9 @@ enum EXIFExtractor {
         let tiffDict = properties[kCGImagePropertyTIFFDictionary] as? [CFString: Any]
         
         // GPS data
-        var lat: Double? = nil
-        var lon: Double? = nil
-        var gpsFormatted: String? = nil
+        var lat: Double?
+        var lon: Double?
+        var gpsFormatted: String?
         
         if let gps = gpsDict {
             if let latVal = gps[kCGImagePropertyGPSLatitude] as? Double,
@@ -84,7 +84,7 @@ enum EXIFExtractor {
         let model = tiffDict?[kCGImagePropertyTIFFModel] as? String
         let lens = exifDict?[kCGImagePropertyExifLensModel] as? String
         
-        var focal: String? = nil
+        var focal: String?
         if let f = exifDict?[kCGImagePropertyExifFocalLength] as? Double {
             focal = String(format: String(
                 localized: "exif.inspector.focal-length.mm",
@@ -93,12 +93,12 @@ enum EXIFExtractor {
             ), Int(round(f)))
         }
         
-        var fNumber: String? = nil
+        var fNumber: String?
         if let fn = exifDict?[kCGImagePropertyExifFNumber] as? Double {
             fNumber = String(format: "ƒ/%.1f", fn)
         }
         
-        var iso: String? = nil
+        var iso: String?
         if let isoRatings = exifDict?[kCGImagePropertyExifISOSpeedRatings] as? [Int], let first = isoRatings.first {
             iso = String(format: String(
                 localized: "exif.inspector.iso.value",
@@ -107,7 +107,7 @@ enum EXIFExtractor {
             ), "\(first)")
         }
         
-        var shutter: String? = nil
+        var shutter: String?
         if let expTime = exifDict?[kCGImagePropertyExifExposureTime] as? Double {
             if expTime < 1.0 && expTime > 0 {
                 shutter = String(format: String(
@@ -271,7 +271,11 @@ struct EXIFInspectorView: View {
                                 }) {
                                     HStack(spacing: 3) {
                                         Image(systemName: "map.fill")
-                                        Text("Open All the Maps")
+                                        Text(String(
+                                            localized: "exif.inspector.gps.open-maps.button-title",
+                                            defaultValue: "Open All the Maps",
+                                            comment: "Button title to open current GPS coordinates in Apple Maps"
+                                        ))
                                     }
                                     .font(.system(size: 10, weight: .semibold))
                                     .padding(.horizontal, 8)
