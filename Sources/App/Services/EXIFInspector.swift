@@ -271,11 +271,7 @@ struct EXIFInspectorView: View {
                                 }) {
                                     HStack(spacing: 3) {
                                         Image(systemName: "map.fill")
-                                        Text(String(
-                                            localized: "exif.inspector.gps.open-maps",
-                                            defaultValue: "Open Maps",
-                                            comment: "Button title to open detected coordinates in Maps"
-                                        ))
+                                        Text("Open All the Maps")
                                     }
                                     .font(.system(size: 10, weight: .semibold))
                                     .padding(.horizontal, 8)
