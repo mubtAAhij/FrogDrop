@@ -8409,7 +8409,7 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Open Maps"
+            "value": "Open the Maps"
           }
         },
         "es-419": {
@@ -9478,6 +9478,132 @@
           "stringUnit": {
             "state": "translated",
             "value": "Maestro Zen 🧘‍♂️"
+          }
+        }
+      }
+    },
+    "app.menu.check-for-updates": {
+      "comment": "src/Sources/AppDelegate.swift",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check for Updates..."
+          }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar actualizaciones..."
+          }
+        }
+      }
+    },
+    "app.menu.open-dashboard": {
+      "comment": "src/Sources/AppDelegate.swift",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Dashboard"
+          }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Panel de Control"
+          }
+        }
+      }
+    },
+    "common.button.cancel": {
+      "comment": "src/Sources/TunnelManager.swift",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        }
+      }
+    },
+    "core.hardware.unknown": {
+      "comment": "Sources/LabLLM/Core/Hardware.swift",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown"
+          }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desconocido"
+          }
+        }
+      }
+    },
+    "exif.inspector.gps.open-maps.button": {
+      "comment": "Sources/App/Services/EXIFInspector.swift",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open the Maps"
+          }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Mapas"
+          }
+        }
+      }
+    },
+    "exif.inspector.gps.open-maps.button-title": {
+      "comment": "Sources/App/Services/EXIFInspector.swift",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open All the Maps"
+          }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir todos los mapas"
+          }
+        }
+      }
+    },
+    "model-switcher.menu.reveal-in-finder": {
+      "comment": "Sources/LabLLM/Views/InstalledDatasetsPanel.swift",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reveal in Finder"
+          }
+        },
+        "es-419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar en el Finder"
           }
         }
       }
